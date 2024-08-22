@@ -10,10 +10,9 @@ export default [
       sourceType: "commonjs",
       globals: globals.node, // CommonJS environments usually involve Node.js,
       eslintConfigPrettier,
-        rules: {
-          indent: "error",
-        },
-      
+      rules: {
+        indent: "error",
+      },
     },
   },
 
@@ -33,7 +32,7 @@ export default [
         ...globals.browser, // Allow browser globals in all JS files
       },
     },
-  
+
     ...pluginJs.configs.recommended,
     ...prettier,
   },
